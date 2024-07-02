@@ -1,0 +1,117 @@
+.services {
+    background: linear-gradient(180deg, #111312, #141441);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;  // Add padding to the bottom of the services section
+
+    .textContainer {
+        flex: 1;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        p {
+            font-weight: 200;
+            font-size: 20px;
+            color: gray;
+            text-align: right;
+        }
+
+        hr {
+            width: 200px;
+            border: none;
+            border-top: 0.5px solid gray;
+        }
+    }
+
+    .titleContainer {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+
+            img {
+                width: 300px;
+                height: 100px;
+                border-radius: 50px;
+                object-fit: cover;
+            }
+            h1 {
+                font-family: "Open Sans", sans-serif;
+                font-size: 80px;
+                font-weight: lighter;
+                b {
+                    font-family: inherit;
+                    font-weight: 650;
+                }
+                b:hover {
+                    color: orange;
+                    transition: 0.3s;
+                }
+            }
+
+            button {
+                width: 300px;
+                height: 100px;
+                border-radius: 50px;
+                background-color: orange;
+                border: none;
+                font-size: 24px;
+                cursor: pointer;
+                font-size: 30px;
+                font-weight: 500;
+            }
+            button:hover {
+                color: #000000;
+                background-color: rgba(255, 255, 255, 0.893);
+                transition: 0.3s;
+            }
+        }
+    }
+    .listContainer {
+        flex: 2;
+        display: flex;
+        max-width: 1366px;
+        margin: auto;
+        margin-bottom: 20px;  // Add margin to the bottom of the list container
+
+        .box {
+            max-width: 300px; /* Adjust the max-width as needed */
+            h2 {
+                margin-bottom: 5px;
+            }
+            padding: 20px;  // Reduced padding to make the cards shorter
+            border: 0.5px solid gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            button {
+                padding: 10px;
+                background-color: orange;
+                border: none;
+                cursor: pointer;
+                margin-top: 20px;
+                font-size: 20px;
+            }
+            button:hover {
+                background-color: black;
+                color: aliceblue;
+            }
+        }
+
+        .box:hover {
+            transition: 0.5s;
+            background-color: rgba(211, 211, 211, 0.919);
+            color: #111312;
+        }
+    }
+}
